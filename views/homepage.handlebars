@@ -1,16 +1,23 @@
-{{!-- <div id="welcome-div">
-  <h1>
-WELCOME TO TECH TALK BLOG
-  </h1>
+<!-- Loop over each object in the projects array -->
+{{#each posts as |post| }}
+<div class="row mb-4 post">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/post/{{post.id}}">{{post.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="money">💲</span>
+      <!-- Pass needed_funding value to the helper function -->
+      needed!
+    </p>
+    <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
   </div>
-  <p id="description">
-    "We are a community of people dedicated to discussing the latest in tech!"
-  </p>
-  
-<div class="flex-container">
-
-  <div><a href="/maps">View Map 🗺️</a></div>
-  <div><a href="/profile">My Profile 👤</a></div>  
+  <div class="col-md-7">
+    <p>
+      {{post.description}}
+    </p>
+  </div>
 </div>
-</div>
- --}}
+{{/each}}
