@@ -9,7 +9,9 @@ const loginFormHandler = async (event) => {
         // Sends a POST request to API endpoint
         const response = await fetch('/api/users/login', {
             method: 'POST',
-            body: JSON.stringify({ email, password }),
+            body: JSON.stringify({ 
+                email: email, 
+                password: password }),
             headers: { 'Content-Type': 'application/json' },
         });
 
@@ -17,7 +19,8 @@ const loginFormHandler = async (event) => {
             // If successful, redirects the browser to profile page
             document.location.replace('/profile');
         } else {
-            alert(response.statusText);
+            console.log(response);
+            // alert(response.statusText);
         }
     }
 };

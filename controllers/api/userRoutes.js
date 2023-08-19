@@ -23,11 +23,11 @@ router.post('/login', async (req, res) => {
         if (!userData) {
             res
                 .status(400)
-                .json({ message: 'Incorrect email or password, please try again' });
+                .json({ message: 'Sorry! Incorrect email or password, please try again' });
             return;
         }
 
-        const validPassword = await userData.checkpassword(req.body.password);
+        const validPassword = await userData.checkPassword(req.body.password);
 
         if (!validPassword) {
             res
@@ -43,7 +43,7 @@ router.post('/login', async (req, res) => {
             res.json({ user: userData, message: 'You are now logged in!' });
         });
     } catch (err) {
-        res.status(400).json(err);
+        res.status(500).json(err);
     }
 });
 
