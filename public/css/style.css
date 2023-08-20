@@ -1,4 +1,30 @@
-main{
-    background-color: aqua;
-};
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+:root {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1em;
+}
