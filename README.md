@@ -18,6 +18,8 @@ Typing `npm i` into the terminal followed by the package will install them so th
 
 Users are able to sign up, log in and submit their posts, or comment on other users' posts.
 
+<img width="1440" alt="Tech-Talk-Screenshot" src="https://github.com/tyler273/tech-talk-blog/assets/127708141/9e1a8978-4bdb-4219-9f7a-181189942d3c">
+
 [Click here to go to the website!](https://tech-talk-blog-tjw-3a20aff9c737.herokuapp.com/)
 
 ## Credits
