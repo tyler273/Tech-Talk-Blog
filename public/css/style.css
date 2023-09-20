@@ -9,12 +9,33 @@
     background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
 }
 
+a:visited,
+a:active,
+a:link {
+  color: rgb(156, 199, 239);
+  text-decoration: none;
+}
+
+main {
+    padding: 1.5em;
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #000000;
     background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+h1 {
+    padding-left: 5px;
 }
 
 h3 {
@@ -27,4 +48,19 @@ h3 {
     flex-direction: row;
     justify-content: end;
     gap: 1em;
+    padding-right: 1em;
+}
+
+.col-md-5 {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+
+.col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    border: 3px solid black;
 }

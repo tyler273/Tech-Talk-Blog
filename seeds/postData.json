@@ -16,5 +16,11 @@
       "name": "Roll 'Em Up",
       "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
       "user_id": 3
+    },
+    {
+      "id": 4,
+      "name": "Tech Market Situation",
+      "description": "Let's discuss the current market situation. Does anyone know of any companies hiring Entry-level positions for Web Development?",
+      "user_id": 4
     }
   ]
